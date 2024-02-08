@@ -1,0 +1,194 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100000;
+}
+header .logo
+{
+    color: #47126b;
+    font-weight: 700;
+    text-decoration: none;  
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover ,
+header ul li a.activate
+{
+    background: #47126b;
+    color: #2b1055;
+}
+.hero{
+    padding: 70px 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center ;
+}
+.hero h1{
+    font-size: 48px;
+    color: #fff;
+}
+.hero p{
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.main-content {
+    background-repeat: no-repeat;
+    background: url(https://img.freepik.com/free-photo/wisps-pink-fume_23-2147734846.jpg?w=996&t=st=1707333168~exp=1707333768~hmac=4a6419f9d8cca336747100b3fbc5b662d2d0673927621ce4b2dde15caec272b3);
+    padding:40px ;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    z-index: 10000;
+}
+.main-content h2
+{
+    color: #fff;
+}
+.books{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 40px;
+    margin-top: 40px;
+}
+.book{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    text-align: center;
+}
+.book img{
+    border-radius: 20px;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+.book h3{
+    color: #fff;
+    font-size: 24px;
+    margin-top: 0px;
+}
+.book p{
+    margin-top: 5px;
+    color: #666;
+}
+.btn{
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #62009b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.4s ease;
+}
+.btn:hover{
+    background-color: #555;
+}
+footer{
+    background: linear-gradient(to bottom , #1c0522 ,  transparent);
+    background-color: #262626;
+    color:#fff;
+    padding: 20px;
+    text-align: center;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#1c0522,transparent);
+    z-index: 1000;
+}
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+button
+{
+    width: 165px;
+    height: 62px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 1rem;
+    border: none;
+    position: relative;
+    background: #000;
+    transition: 0.1s;
+}
+button::after
+{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle 
+    farthest-corner at 10% 20% , rgba(255,94,247,1) 17.8%,
+    rgba(2,245,255,1) 100.2% );
+    filter: blur(15px);
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+button:active
+{
+    color: #000;
+    transform: scale(0.9) rotate(3deg);
+    background: radial-gradient(circle farthest-corner 
+    at 10% 20% , rgba(2,245,255,1) 100.2%);
+    transition: 0.5s;
+}
